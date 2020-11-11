@@ -9,11 +9,6 @@ import Header from './components/main-menu/Header';
 import './style.scss'
 
 
-
-
-
-
-
 function App() {
   return (
     <BrowserRouter>      
