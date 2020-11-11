@@ -89,18 +89,18 @@ header{
         @include Container;
         width: 80%;
         background:rgba(0,0,0,.2);
-        label{
-            display:block;
-            text-align:center
-        }
-        input{
-         width:80%;
-         margin:10px 10%;
-         height: 1.5rem;
-         border-radius: 10px;
-         font-family: Arial, Helvetica, sans-serif;
-         font-size:1rem
-        }
+        // label{
+        //     display:block;
+        //     text-align:center
+        // }
+        // input{
+        //  width:80%;
+        //  margin:10px 10%;
+        //  height: 1.5rem;
+        //  border-radius: 10px;
+        //  font-family: Arial, Helvetica, sans-serif;
+        //  font-size:1rem
+        // }
         textarea{
             width: 80%;
             margin:10px 10%;
@@ -111,6 +111,7 @@ header{
         }
 
     }
+    
 
 
 /*
