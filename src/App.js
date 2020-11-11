@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import ArtigoContainer from './components/artigos/ArtigoContainer.js';
+import Artigo from './components/artigos/ArtigoContainer.js';
+import Contato from './components/Contato/Contato.js';
+import Formulario from './components/form/Formulario.js';
+import Home from './components/Home/Home.js';
+import Header from './components/main-menu/Header';
+import './style.scss'
+
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>      
+      <div className="container">  
+          <Header/>
+          <Home/>  
+          <ArtigoContainer/>
+          <Formulario/>
+          <Contato/>   
+      </div>
+    </BrowserRouter>
+  
   );
 }
 
 export default App;
+
+
+
+
+  

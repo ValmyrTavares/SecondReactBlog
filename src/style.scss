@@ -1,0 +1,268 @@
+/*
+******************************************************************
+                 Variáveis e Mixins
+******************************************************************
+*/
+@mixin Container{
+    margin:0 10%;
+    height: 100%;
+}
+/*
+******************************************************************
+                 APP
+******************************************************************
+*/
+
+.container{
+    margin:0;
+    height: 100%;
+    display: block;
+}
+
+
+
+/*
+******************************************************************
+                 Header
+******************************************************************
+*/
+header{
+    @include Container;
+    
+    display:grid;
+    grid-template-columns: 1fr  1fr;
+    section{
+        width: 75%;
+        img{
+            width: 100%;
+            position: relative;
+            min-width: 300px;
+            max-width: 400px;
+        top: 33%;
+        }
+    }
+    div{
+        a{
+            text-decoration: none;
+        font-size: 1.2rem;
+        margin-right: 5%;
+        position: relative;
+        top: 22%;
+        left: 10%;
+        }
+    }    
+}
+
+/*
+******************************************************************
+                 Home
+******************************************************************
+*/
+.home{
+    @include Container;
+}
+.carrossel{
+ 
+  
+    img{
+        width: 100%;
+        height: 76vh;
+    }
+   div{
+       display:flex;
+       justify-content: space-between;
+       position: relative;
+       top:-150px;
+       button{
+           background:none;
+           border:none;
+           color:black;
+       }
+   }
+}
+/*
+******************************************************************
+                 Formulario
+******************************************************************
+*/
+    .formulario{
+        @include Container;
+        width: 80%;
+        background:rgba(0,0,0,.2);
+        label{
+            display:block;
+            text-align:center
+        }
+        input{
+         width:80%;
+         margin:10px 10%;
+         height: 1.5rem;
+         border-radius: 10px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size:1rem
+        }
+        textarea{
+            width: 80%;
+            margin:10px 10%;
+            height: 6rem;
+            font-family: Arial, Helvetica, sans-serif;
+         font-size:1rem;
+         border-radius: 10px;
+        }
+
+    }
+
+
+/*
+******************************************************************
+                 Artigos
+******************************************************************
+*/
+.container-artigos{
+    position: relative;
+    @include Container;
+    button{
+        position: relative;
+        top: 52px;
+        left: -7px;
+        z-index: 10;
+        font-size: 1.2rem;
+        display: flex;
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        padding: .5rem 1rem;
+        align-items: center;
+        &::before{
+            content:"";
+            width: 40px;
+            height: 4px;
+            background:#fff;
+            margin-right: 4px;          
+            box-shadow: 0 12px #fff, 0 -12px #fff;
+        }
+    }
+  
+    .category{
+        position: absolute;
+        top: 120px;
+        left: 0px;
+        cursor: pointer;
+        z-index: 10;
+        padding: 0px;
+        height: 100%;      
+        padding: 5px;
+        overflow: hidden;
+        background: #9e4d4d52;
+        animation: modal-category 3s ease-in-out;
+       ul{
+           padding:20px;
+
+           li{
+               cursor:pointer;
+               color:white;              
+           }
+       }
+       .animeModal{
+        animation: modal-category 3s ease-in-out;
+       }
+       @keyframes modal-category {
+           from{  height: 0;  }
+           to{  height: 100%;  }
+       }
+    }
+    .articles{
+        background:#80808036;
+        img{
+            width: 100%;
+        }
+        div{
+            position: relative;
+            h2{
+                position: absolute;
+                // top: -38px;
+                // left: 20%;
+                text-align: center;
+                margin:5px 20%;
+                font-size: 65px;
+            }
+        }
+       p{
+        column-count: 3;
+        width: 100%;
+
+       }
+    }
+}
+
+
+
+
+/*
+******************************************************************
+                 Contato
+******************************************************************
+*/
+
+.contato{
+    @include Container;
+    h1{
+        background:#B17C7C;
+        width: 100%;
+        color:white;
+        height: 20vh;     
+        font-family: arial;
+        text-align: center;       
+        font-size:1.5rem;
+        padding: 2rem 1rem;
+        box-sizing: border-box
+    }
+    section{
+        display:flex;
+        flex-wrap: wrap;
+        .box-contato{
+            width: 30%;
+            margin:2px auto;       
+            text-align:center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background:#b17c7c1c;
+            p{
+                width: 80%;
+               margin: auto auto;
+               
+            }            
+        }
+    }
+    .footer{
+        background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Florence_bridges.jpg/1200px-Florence_bridges.jpg");
+        background-size:cover;
+        background-position: 40% 67%;
+        width: 100% ;
+        color:white;
+        height: 13vh;     
+        font-family: arial;       
+        margin-top:5px;        
+        box-sizing: border-box
+
+    }
+}
+
+
+
+
+
+
+
+       
+        
+
+
+
+
+
+
+
+    
