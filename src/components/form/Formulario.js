@@ -15,7 +15,17 @@ function Formulario() {
         event.preventDefault(event)
         console.log(postagem)
         axios.post(" http://localhost:3000/articles",postagem)
+        ClearFields()
     }   
+    
+    function ClearFields(){
+        setPostagem({
+            title:"",
+            image:"",
+            text: "" 
+        })
+       
+    }
 
     function handleChange({target}){
         const {id, value} = target;
