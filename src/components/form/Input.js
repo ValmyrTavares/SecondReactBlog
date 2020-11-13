@@ -22,8 +22,7 @@ function Input({id, label, value,setValue, ...props}) {
     return (
         <div>
            <label style={labelStyle} htmlFor={id}>{label}</label>
-            <input style={input} id={id} name={id} value={value}
-            onChange={({target})=> setValue(target.value)} {...props}/>
+            <input style={input} id={id} name={id} value={value} {...props}/>
         </div>
     )
 }

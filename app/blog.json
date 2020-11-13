@@ -1,27 +1,54 @@
 {
-    "imagens":[
-   { "img":"https://i.pinimg.com/564x/3a/f2/a2/3af2a23aad84a83ace5caadc1ffa5789.jpg"},
-   { "img":"https://i.pinimg.com/564x/e4/ce/ff/e4ceffb753ab5460bd0c852f4ecf0e2a.jpg"},
-   { "img":"https://i.pinimg.com/564x/49/1c/16/491c16335b83bf7863252a448d264db4.jpg"},
-   { "img":"https://i.pinimg.com/564x/62/1d/2c/621d2c972e0490985efd5c77fdf1ac13.jpg"}
-    ],
-     "articles":[
-        {
-            "title": "Primeiro artigo",
-            "image":"https://s3.amazonaws.com/comunitaitaliana.com/wp-content/uploads/2020/02/26145849/verona.jpg",
-            "text": "A cidade foi declarada patrimônio da humanidade pela UNESCO por causa da sua estrutura urbana e arquitetura: Verona é um maravilhoso exemplo de cidade que se desenvolveu progressivamente e sem interrupções durante dois mil anos, integrando elementos artísticos de altíssima qualidade dos diversos períodos que se seguiram, representa também, em um modo excepcional o conceito de uma cidade fortificada em etapas determinantes da história europeia."
-        } ,  
-        {
-            "title": "Segundo artigo",
-            "image":"https://upload.wikimedia.org/wikipedia/commons/0/07/Panoramic_view_of_Colle_di_Val_d%27Elsa_alta.jpg",
-            "text": "A cidade foi declarada patrimônio da humanidade pela UNESCO por causa da sua estrutura urbana e arquitetura: Verona é um maravilhoso exemplo de cidade que se desenvolveu progressivamente e sem interrupções durante dois mil anos, integrando elementos artísticos de altíssima qualidade dos diversos períodos que se seguiram, representa também, em um modo excepcional o conceito de uma cidade fortificada em etapas determinantes da história europeia."
-        } ,
-        {
-            "title": "Segunda Guerra",
-            "image":"https://sfo2.digitaloceanspaces.com/gd-grecia/2020/06/cal%C3%A7ada-mykonos.jpg",
-            "text": "A cidade foi declarada patrimônio da humanidade pela UNESCO por causa da sua estrutura urbana e arquitetura: Verona é um maravilhoso exemplo de cidade que se desenvolveu progressivamente e sem interrupções durante dois mil anos, integrando elementos artísticos de altíssima qualidade dos diversos períodos que se seguiram, representa também, em um modo excepcional o conceito de uma cidade fortificada em etapas determinantes da história europeia."
-        } 
-    ]
-      
-
+  "imagens": [
+    {
+      "img": "https://i.pinimg.com/564x/3a/f2/a2/3af2a23aad84a83ace5caadc1ffa5789.jpg"
+    },
+    {
+      "img": "https://i.pinimg.com/564x/e4/ce/ff/e4ceffb753ab5460bd0c852f4ecf0e2a.jpg"
+    },
+    {
+      "img": "https://i.pinimg.com/564x/49/1c/16/491c16335b83bf7863252a448d264db4.jpg"
+    },
+    {
+      "img": "https://i.pinimg.com/564x/62/1d/2c/621d2c972e0490985efd5c77fdf1ac13.jpg"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Primeiro artigo",
+      "image": "https://s3.amazonaws.com/comunitaitaliana.com/wp-content/uploads/2020/02/26145849/verona.jpg",
+      "text": "A cidade foi declarada patrimônio da humanidade pela UNESCO por causa da sua estrutura urbana e arquitetura: Verona é um maravilhoso exemplo de cidade que se desenvolveu progressivamente e sem interrupções durante dois mil anos, integrando elementos artísticos de altíssima qualidade dos diversos períodos que se seguiram, representa também, em um modo excepcional o conceito de uma cidade fortificada em etapas determinantes da história europeia.",
+      "id": 1
+    },
+    {
+      "title": "Segundo artigo",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Panoramic_view_of_Colle_di_Val_d%27Elsa_alta.jpg",
+      "text": "A cidade foi declarada patrimônio da humanidade pela UNESCO por causa da sua estrutura urbana e arquitetura: Verona é um maravilhoso exemplo de cidade que se desenvolveu progressivamente e sem interrupções durante dois mil anos, integrando elementos artísticos de altíssima qualidade dos diversos períodos que se seguiram, representa também, em um modo excepcional o conceito de uma cidade fortificada em etapas determinantes da história europeia.",
+      "id": 2
+    },
+    {
+      "title": "Segunda Guerra",
+      "image": "https://sfo2.digitaloceanspaces.com/gd-grecia/2020/06/cal%C3%A7ada-mykonos.jpg",
+      "text": "A cidade foi declarada patrimônio da humanidade pela UNESCO por causa da sua estrutura urbana e arquitetura: Verona é um maravilhoso exemplo de cidade que se desenvolveu progressivamente e sem interrupções durante dois mil anos, integrando elementos artísticos de altíssima qualidade dos diversos períodos que se seguiram, representa também, em um modo excepcional o conceito de uma cidade fortificada em etapas determinantes da história europeia.",
+      "id": 3
+    },
+    {
+      "title": "Veneza a cidade das aguas",
+      "image": "https://italiana.blog.br/wp-content/uploads/2019/05/veneza-2.jpg",
+      "text": "A cidade foi declarada patrimônio da humanidade pela UNESCO por causa da sua estrutura urbana e arquitetura: Verona é um maravilhoso exemplo de cidade que se desenvolveu progressivamente e sem interrupções durante dois mil anos, integrando elementos artísticos de altíssima qualidade dos diversos períodos que se seguiram, representa também, em um modo excepcional o conceito de uma cidade fortificada em etapas determinantes da história europeia.",
+      "id": 5
+    },
+    {
+      "title": "New York",
+      "image": "https://ei.marketwatch.com/Multimedia/2020/08/16/Photos/ZQ/MW-IM589_nyc_20200816170721_ZQ.jpg?uuid=79c6317c-e004-11ea-afc4-9c8e992d421e",
+      "text": "A cidade foi declarada patrimônio da humanidade pela UNESCO por causa da sua estrutura urbana e arquitetura: Verona é um maravilhoso exemplo de cidade que se desenvolveu progressivamente e sem interrupções durante dois mil anos, integrando elementos artísticos de altíssima qualidade dos diversos períodos que se seguiram, representa também, em um modo excepcional o conceito de uma cidade fortificada em etapas determinantes da história europeia.",
+      "id": 6
+    },
+    {
+      "title": "São Paulo",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSh8JsuScAJWBJB9mzhdcV0M7YzyhAUKnly4g&usqp=CAU",
+      "text": "A cidade foi declarada patrimônio da humanidade pela UNESCO por causa da sua estrutura urbana e arquitetura: Verona é um maravilhoso exemplo de cidade que se desenvolveu progressivamente e sem interrupções durante dois mil anos, integrando elementos artísticos de altíssima qualidade dos diversos períodos que se seguiram, representa também, em um modo excepcional o conceito de uma cidade fortificada em etapas determinantes da história europeia.",
+      "id": 7
+    }
+  ]
 }

@@ -9,19 +9,19 @@ function TextArea({id, label, name, value, setValue, ...props}) {
         textAlign:"center"
     }
 
-   const textArea = {
-    width: "80%",
-    margin:"10px 10%",
-    height: "6rem",
-    fontFamily: "Arial, Helvetica, sans-serif",
- fontSize:"1rem",
- borderRadius: "10px"
-    }
+    const textArea = {
+        width: "80%",
+        margin:"10px 10%",
+        height: "6rem",
+        fontFamily: "Arial, Helvetica, sans-serif",
+        fontSize:"1rem",
+        borderRadius: "10px"
+        }
 
     return (
         <div>
               <label style={labelStyle} htmlFor={id}>{label}</label>
-              <textarea type="text" id={id} name={name} value={value} onChange={({target}) => setValue(target.value)} {...props}></textarea>
+              <textarea style={textArea} type="text" id={id} name={name} value={value} onChange={({target}) => setValue(target.value)} {...props}></textarea>
         </div>
     )
 }

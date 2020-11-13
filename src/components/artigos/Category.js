@@ -1,6 +1,10 @@
 import React from 'react'
 
 function Category({articles,state,setState}) {
+
+   
+
+
     return (
         <div className="category">
           <ul>

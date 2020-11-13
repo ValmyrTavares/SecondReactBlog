@@ -5,26 +5,29 @@ import axios from 'axios'
 import Button from './Button'
 
 function Formulario() {
-    const [postatem, setPostagem] = React.useState({
+    const [postagem, setPostagem] = React.useState({
         title:"",
         image:"",
         text: ""        
     })
 
-    function handleSubmit(){
+    function handleSubmit(event){
+        event.preventDefault(event)
+        console.log(postagem)
+        axios.post(" http://localhost:3000/articles",postagem)
+    }   
 
+    function handleChange({target}){
+        const {id, value} = target;
+        setPostagem({...postagem, [id]:value})
     }
-    
-
 
     return (
         <form className="formulario" onSubmit={handleSubmit}>
-           <Input label="Titulo" type="text" id="title" placeholder="Titulo do Artigo" value={setPostagem.title} setValue={setPostagem}/>
-           <Input label="Imagem" type="text" id="imagem" placeholder="Imagem do Artigo" value={setPostagem.image} setValue={setPostagem}/>
-           <TextArea label="Texto" id="Texto" placeholder="Escreva seu Artigo" value={setPostagem.text} setValue={setPostagem}/>
-           <Button texto="Enviar"/>
-          
-
+           <Input label="Titulo"   type="text" id="title"  value={postagem.title} onChange={handleChange}/>
+           <Input label="Imagem" type="text" id="image"  value={postagem.image} onChange={handleChange}/>
+           <TextArea label="Texto" id="text"  value={postagem.text} onChange={handleChange}/>
+           <Button texto="Enviar"/>         
         </form>
     )
 }
