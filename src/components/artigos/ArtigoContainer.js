@@ -14,7 +14,7 @@ function ArtigoContainer() {
         fetch("http://localhost:3000/articles")
         .then(response => response.json())
         .then(r => setArticles(r))
-    },[articles])
+    },[])
 
 
 
