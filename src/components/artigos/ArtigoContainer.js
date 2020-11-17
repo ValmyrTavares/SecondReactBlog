@@ -22,7 +22,7 @@ function ArtigoContainer() {
     if(articles===null)return null
 
     return (
-        <div className="container-artigos">
+        <div className="container-artigos" id="artigo">
            <button onClick={()=> setModal(modal=!modal)}>Categorias</button>
             {modal ? <Category className="animeModal" articles={articles} state={index} setState={setIndex} /> : null}
             <Articles title={articles[index].title} picture={articles[index].image} text={articles[index].text}/>
