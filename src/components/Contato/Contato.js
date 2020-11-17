@@ -7,7 +7,7 @@ import Footer from './Footer'
 
 function Contato() {
     return (
-        <div className="contato">
+        <div className="contato" id="contato">
             <h1>Como você prefere falar com a gente?</h1>
             <section>
             <BoxContato contato="EuteAjudo@bank.com" texto="Tem alguma dúvida"  forma="E-mail" icone={<AiOutlineMail size={30} color="black"/>}/>
