@@ -1,8 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import ArtigoContainer from './components/artigos/ArtigoContainer.js';
-import Artigo from './components/artigos/ArtigoContainer.js';
-import Contato from './components/Contato/Contato.js';
+
 import Formulario from './components/form/Formulario.js';
 import Home from './components/Home/Home.js';
 import Header from './components/main-menu/Header';
@@ -14,10 +12,14 @@ function App() {
     <BrowserRouter>      
       <div className="container">  
           <Header/>
-          <Home/>  
-          <ArtigoContainer/>
-          <Formulario/>
-          <Contato/>   
+         
+          <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/admin" element={<Formulario/>}/>      
+
+          </Routes>
+         
+        
       </div>
     </BrowserRouter>
   
