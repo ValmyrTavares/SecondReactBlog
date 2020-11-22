@@ -15,8 +15,8 @@ function Menu() {
             <a className="admin">
                 admin
                 <span>
-                    <a>Artigos</a>
-                    <a>Slide</a>
+                    <NavLink to="/admin"  >Artigo</NavLink>
+                    <NavLink to="/admin/slide"  >Slide</NavLink>               
                 </span>
             </a>
 
