@@ -1,4 +1,6 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
+
 import Input from './Input'
 import TextArea from './TextArea'
 import axios from 'axios'
@@ -10,6 +12,7 @@ function Formulario() {
         image:"",
         text: ""        
     })
+    const navegar = useNavigate();
 
     function handleSubmit(event){
         event.preventDefault(event)
@@ -33,12 +36,15 @@ function Formulario() {
     }
 
     return (
+        <>
         <form className="formulario" onSubmit={handleSubmit}>
            <Input label="Titulo"   type="text" id="title"  value={postagem.title} onChange={handleChange}/>
            <Input label="Imagem" type="text" id="image"  value={postagem.image} onChange={handleChange}/>
            <TextArea label="Texto" id="text"  value={postagem.text} onChange={handleChange}/>
            <Button texto="Enviar"/>         
         </form>
+        <button >Trocar slide</button>
+        </>
     )
 }
 

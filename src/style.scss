@@ -41,14 +41,32 @@ header{
         top: 33%;
         }
     }
-    div{
+    .routes{
+        display: flex;
         a{
             text-decoration: none;
         font-size: 1.2rem;
         margin-right: 5%;
         position: relative;
-        top: 22%;
-        left: 10%;
+        top: 22%;       
+        }       
+        .admin{
+            cursor:pointer;
+            span{
+                position: relative;
+                top:7px;
+                display: flex;
+                flex-direction: column;
+                opacity: 0;
+                transition: 0.4s;
+                a + a{
+                    margin:3px;
+                }
+            }
+        }
+        .admin:hover  span{
+           opacity: 1;
+           
         }
     }    
 }
