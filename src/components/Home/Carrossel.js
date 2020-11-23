@@ -19,8 +19,9 @@ function Carrossel() {
     },[])
 
     React.useEffect(() => {
+        if(artigo==null)return null
         const stop =  setInterval(()=>{  
-            if(count>3)  setCount(0)
+            if(count>artigo.length-1)  setCount(0)
             else           
             setCount(count++)  
           },2000)         
@@ -34,7 +35,7 @@ function Carrossel() {
     }
 
     function decrease(){               
-        if(count===0)setCount(3)
+        if(count===0)setCount(artigo.length-1)
         else setCount(count -1)          
        
     }
