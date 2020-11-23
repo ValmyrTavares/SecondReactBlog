@@ -33,12 +33,15 @@ function Formulario() {
     }
 
     return (
+        <>
         <form className="formulario" onSubmit={handleSubmit}>
            <Input label="Titulo"   type="text" id="title"  value={postagem.title} onChange={handleChange}/>
            <Input label="Imagem" type="text" id="image"  value={postagem.image} onChange={handleChange}/>
            <TextArea label="Texto" id="text"  value={postagem.text} onChange={handleChange}/>
            <Button texto="Enviar"/>         
         </form>
+         <Button texto="Editar/Deletar Posts"/>    
+         </>
     )
 }
 

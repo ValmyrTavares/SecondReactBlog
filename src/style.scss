@@ -89,7 +89,9 @@ header{
         @include Container;
         width: 80%;
         background:rgba(0,0,0,.2);       
-
+        button{
+            width:"50%";
+        }
     }
     
 

@@ -11,14 +11,11 @@ function App() {
   return (
     <BrowserRouter>      
       <div className="container">  
-          <Header/>
-         
+          <Header/>         
           <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/admin" element={<Formulario/>}/>      
-
-          </Routes>
-         
+            <Route path="/" element={<Home/>}/>
+            <Route path="/admin" element={<Formulario/>}/>
+          </Routes>        
         
       </div>
     </BrowserRouter>
