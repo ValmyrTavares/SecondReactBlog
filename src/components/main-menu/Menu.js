@@ -6,12 +6,22 @@ import {NavLink} from  "react-router-dom"
 
 function Menu() {
     return (
-        <div>
+        <div className="routes">
             <NavLink to="/" end >Home</NavLink>
          
             <a href="#artigo">Artigo</a>
             <a href="#contato">Contato</a>
-            <NavLink to="/admin" end >Admin</NavLink>
+           
+            <a className="admin">
+                admin
+                <span>
+                    <NavLink to="/admin"  >Artigo</NavLink>
+                    <NavLink to="/admin/slide"  >Slide</NavLink>               
+                </span>
+            </a>
+
+
+
            
         </div>
     )
